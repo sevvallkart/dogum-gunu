@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f8a5c2;
+    overflow: hidden;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .cake-container {
+    position: relative;
+    transform: scale(0);
+    animation: growCake 3s ease forwards;
+  }
+  
+  @keyframes growCake {
+    to { transform: scale(1); }
+  }
+  
+  .cake-body {
+    width: 200px;
+    height: 120px;
+    background: #8e5e4e;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .icing {
+    width: 200px;
+    height: 25px;
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    top: 0;
+  }
+  
+  .candle {
+    background: #fff;
+    width: 7px;
+    height: 40px;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+  }
+  
+  .flame {
+    width: 10px;
+    height: 20px;
+    background: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: flicker 0.3s infinite alternate;
+  }
+  
+  @keyframes flicker {
+    from { opacity: 0.7; }
+    to { opacity: 1; }
+  }
+  
+  .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background: #7f2d3d;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .wish-message, .big-heart, .final-message {
+    opacity: 0;
+    transition: opacity 2s ease;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .big-heart {
+    font-size: 100px;
+    color: red;
+  }
+  
+  .final-message {
+    font-size: 20px;
+    color: #5c1a2d;
+  }
+  
+  .slideshow-container img {
+    max-width: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
