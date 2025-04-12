@@ -43,6 +43,6 @@ function blowCandle() {
         }
     }, 3000);
 
-    const music = new Audio('music/sarki.mp3');
+    const music = new Audio('music/music.mp3');
     music.play();
 }
